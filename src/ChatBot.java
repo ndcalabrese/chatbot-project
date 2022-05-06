@@ -100,8 +100,8 @@ public class ChatBot {
                 case 1 -> System.out.print("Do you own a pair of white New Balance " +
                         "shoes with a blue 'N' on the side? Y/N: ");
                 case 2 -> System.out.print("Do you like Spongebob? Y/N: ");
-                case 3 -> System.out.print("Do you drink craft beer?: ");
-                case 4 -> System.out.print("Do you like watching Logan Paul videos?: ");
+                case 3 -> System.out.print("Do you drink craft beer? Y/N: ");
+                case 4 -> System.out.print("Do you like watching Logan Paul videos? Y/N: ");
             }
         } else if (questionType.equals("quiz")) {
             // Questions for programming quiz
@@ -136,10 +136,10 @@ public class ChatBot {
                 case 4:
                     // Answer B
                     System.out.println("\nWhat does HTML stand for?\n");
-                    System.out.println("A: 'Hey, That's My Lasagna");
+                    System.out.println("A: 'Hey, That's My Lasagna'");
                     System.out.println("B: HyperText Markup Language");
-                    System.out.println("C: char");
-                    System.out.println("D: boolean\n");
+                    System.out.println("C: High-level Technology Middleware Logistics");
+                    System.out.println("D: None of the above\n");
                     System.out.print("Your answer: ");
                     break;
             }
@@ -180,9 +180,13 @@ public class ChatBot {
                 estRange[0] = 46;
                 estRange[1] = 52;
                 break;
+            case "NNYN":
+                estRange[0] = 40;
+                estRange[1] = 46;
+                break;
             case "YYNN":
                 estRange[0] = 30;
-                estRange[1] = 46;
+                estRange[1] = 36;
                 break;
             case "YYYN":
                 estRange[0] = 34;
@@ -219,6 +223,18 @@ public class ChatBot {
             case "NYNN":
                 estRange[0] = 4;
                 estRange[1] = 10;
+                break;
+            case "NNYY":
+                estRange[0] = 21;
+                estRange[1] = 25;
+                break;
+            case "YYNY":
+                estRange[0] = 12;
+                estRange[1] = 71;
+                break;
+            case "NYYY":
+                estRange[0] = 21;
+                estRange[1] = 71;
                 break;
         }
 
