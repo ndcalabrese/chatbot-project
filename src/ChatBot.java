@@ -261,14 +261,18 @@ public class ChatBot {
                 System.out.println(i);
             }
             // Print the user's number as a formatted String
-            //System.out.println(formatNumber(userInput));
+            if (userInput % 1 != 0) {
+                System.out.println(formatNumber(userInput));
+            }
             // If user entered a negative number, count from -1 to that number
         } else if (userInput < 0) {
             int min = (int) userInput;
             for (int i = -1; i >= min; i--) {
                 System.out.println(i);
             }
-            //System.out.println(formatNumber(userInput));
+            if (userInput % 1 != 0) {
+                System.out.println(formatNumber(userInput));
+            }
             // If user entered zero, don't count anything
         } else {
             System.out.println((int) userInput + ". Wow, that was easy!");
